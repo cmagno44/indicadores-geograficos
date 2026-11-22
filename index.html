@@ -1,184 +1,68 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Indicadores Geográficos</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
-<<<<<<< HEAD
-<link rel="stylesheet" href="assets/css/styles.css">
-=======
-<style>
-/* Layout: cabeçalho com curvas de nível, descrição, integrantes, e dois cartões de acesso (mapa ArcGIS e painel Power BI). */
-:root {
-  --bg: #f3f6f4;
-  --surface: #ffffff;
-  --fg: #14211d;
-  --muted: #55655f;
-  --line: #d3dcd7;
-  --accent: #0b6b57;
-  --accent-fg: #ffffff;
-  --contour: #b9cfc6;
-  --pending-bg: #fff4d6;
-  --pending-fg: #6b4e00;
-  --font-display: "Space Grotesk", system-ui, sans-serif;
-  --font-body: "Inter", system-ui, sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e1815; --surface: #15231f; --fg: #e8f0ec; --muted: #9db0a8; --line: #26382f;
-    --accent: #4fc4a4; --accent-fg: #06201a; --contour: #24413a; --pending-bg: #3a2f10; --pending-fg: #f0d58a;
-    color-scheme: dark;
-  }
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.6;
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
-  padding-block: 0 48px;
-}
-.wrap { max-width: 880px; margin: 0 auto; }
-header { position: relative; padding-block: 56px 40px; overflow: hidden; }
-header svg { position: absolute; right: -60px; top: -30px; width: 460px; max-width: 80%; height: auto; z-index: 0; }
-header .in { position: relative; z-index: 1; }
-.eyebrow { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
-h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(34px, 7vw, 56px); line-height: 1.05; margin: 0 0 16px; text-wrap: balance; }
-.lede { max-width: 58ch; color: var(--muted); font-size: 18px; margin: 0; }
-section { padding-block: 28px; border-top: 1px solid var(--line); }
-h2 { font-family: var(--font-display); font-weight: 500; font-size: 22px; margin: 0 0 14px; }
-p { margin: 0 0 12px; max-width: 65ch; }
-.pending { background: var(--pending-bg); color: var(--pending-fg); padding: 2px 8px; border-radius: 4px; font-size: .9em; }
-dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; margin: 0; }
-dt { color: var(--muted); font-size: 14px; }
-dd { margin: 0; min-width: 0; }
-ul.team { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
-ul.team li { background: var(--surface); border: 1px solid var(--line); padding: 12px 14px; border-radius: 6px; min-width: 0; overflow-wrap: anywhere; }
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
-.card h3 { font-family: var(--font-display); font-size: 19px; margin: 0; }
-.card p { color: var(--muted); font-size: 15px; flex: 1; }
-.tag { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-.btn { display: inline-block; align-self: flex-start; background: var(--accent); color: var(--accent-fg); padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; }
-.btn:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; }
-.btn[aria-disabled="true"] { background: var(--line); color: var(--muted); cursor: not-allowed; }
-footer { padding-top: 28px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
-</style>
->>>>>>> f613ed76f695ec895056093d0722c4f139d035d7
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indicadores Geográficos</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <svg viewBox="0 0 460 360" fill="none" stroke="var(--contour)" stroke-width="1.5" aria-hidden="true">
-      <ellipse cx="260" cy="170" rx="210" ry="140" transform="rotate(-18 260 170)"/>
-      <ellipse cx="260" cy="170" rx="170" ry="108" transform="rotate(-18 260 170)"/>
-      <ellipse cx="260" cy="170" rx="130" ry="78" transform="rotate(-18 260 170)"/>
-      <ellipse cx="260" cy="170" rx="92" ry="52" transform="rotate(-18 260 170)"/>
-      <ellipse cx="260" cy="170" rx="56" ry="28" transform="rotate(-18 260 170)"/>
-    </svg>
-    <div class="in">
-      <p class="eyebrow">Sistemas de Informação · PUC Betim</p>
-      <h1>Indicadores Geográficos</h1>
-      <p class="lede">Mapa interativo no ArcGIS e painel no Power BI com os mesmos dados.</p>
-    </div>
-  </header>
+  <div class="wrap">
+    <header>
+      <svg viewBox="0 0 460 360" fill="none" stroke="var(--contour)" stroke-width="1.5" aria-hidden="true">
+        <ellipse cx="260" cy="170" rx="210" ry="140" transform="rotate(-18 260 170)"/>
+        <ellipse cx="260" cy="170" rx="170" ry="108" transform="rotate(-18 260 170)"/>
+        <ellipse cx="260" cy="170" rx="130" ry="78" transform="rotate(-18 260 170)"/>
+        <ellipse cx="260" cy="170" rx="92" ry="52" transform="rotate(-18 260 170)"/>
+        <ellipse cx="260" cy="170" rx="56" ry="28" transform="rotate(-18 260 170)"/>
+      </svg>
+      <div class="in">
+        <p class="eyebrow">Sistemas de Informação · PUC Betim</p>
+        <h1>Indicadores Geográficos</h1>
+        <p class="lede">Mapa interativo no ArcGIS e painel no Power BI com os mesmos dados.</p>
+      </div>
+    </header>
 
-  <section>
-    <h2>Sobre o trabalho</h2>
-    <dl>
-      <dt>Tema</dt>
-      <dd id="tema"></dd>
-      <dt>Descrição</dt>
-      <dd id="descricao"></dd>
-      <dt>Objetivo</dt>
-      <dd id="objetivo"></dd>    </dl>
-  </section>
+    <section>
+      <h2>Sobre o trabalho</h2>
+      <dl>
+        <dt>Tema</dt>
+        <dd id="tema"></dd>
+        <dt>Descrição</dt>
+        <dd id="descricao"></dd>
+        <dt>Objetivo</dt>
+        <dd id="objetivo"></dd>
+      </dl>
+    </section>
 
-  <section>
-    <h2>Integrantes</h2>
-    <ul class="team" id="team"></ul>
-  </section>
+    <section>
+      <h2>Integrantes</h2>
+      <ul class="team" id="team"></ul>
+    </section>
 
-  <section>
-    <h2>Produtos do trabalho</h2>
-    <div class="cards">
-      <article class="card">
-        <span class="tag">Etapa 1</span>
-        <h3>Mapa de indicadores geográficos</h3>
-        <p>Aplicativo criado no ArcGIS no início do semestre.</p>
-        <a class="btn" id="link-mapa" target="_blank" rel="noopener">Abrir o mapa</a>
-      </article>
-      <article class="card">
-        <span class="tag">Etapa 2</span>
-        <h3>Painel no Power BI</h3>
-        <p>Painel com seis gráficos feitos a partir dos mesmos dados do mapa.</p>
-        <a class="btn" id="link-pbi" target="_blank" rel="noopener">Abrir o painel</a>
-      </article>
-    </div>
-  </section>
+    <section>
+      <h2>Produtos do trabalho</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="tag">Etapa 1</span>
+          <h3>Mapa de indicadores geográficos</h3>
+          <p>Aplicativo criado no ArcGIS no início do semestre.</p>
+          <a class="btn" id="link-mapa" target="_blank" rel="noopener">Abrir o mapa</a>
+        </article>
+        <article class="card">
+          <span class="tag">Etapa 2</span>
+          <h3>Painel no Power BI</h3>
+          <p>Painel com seis gráficos feitos a partir dos mesmos dados do mapa.</p>
+          <a class="btn" id="link-pbi" target="_blank" rel="noopener">Abrir o painel</a>
+        </article>
+      </div>
+    </section>
 
-  <footer>Atividade em grupo · Novembro de 2026</footer>
-</div>
+    <footer>Atividade em grupo · Novembro de 2026</footer>
+  </div>
 
-<<<<<<< HEAD
-<script src="assets/js/config.js"></script>
-<script src="assets/js/main.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
-=======
-<script>
-/* ===== PREENCHA AQUI (só mexa entre as aspas) =====
-   Campos vazios aparecem como "a preencher" na página. */
-var CONFIG = {
-  tema: "BI Concessionária: dados de uma concessionária de motos em Minas Gerais",
-  descricao: "Este trabalho mostra os dados de uma concessionária de motos em Minas Gerais de duas formas. Primeiro, um mapa interativo no ArcGIS, que permite ver a distribuição dos dados pelas cidades do estado. Depois, um painel no Power BI com os mesmos dados, organizado em seis gráficos para facilitar a comparação e a leitura dos resultados. A atividade foi feita em grupo, na disciplina de Business Intelligence da PUC Betim.",
-  objetivo: "Apresentar os dados da concessionária em Minas Gerais de forma visual: no mapa, para ver onde eles se concentram, e no painel, para comparar as cidades e facilitar a leitura dos resultados.",
-  integrantes: [
-    "Carlos Magno Ferreira Silva",
-    "Letícia Rodrigues Batista",
-    "Pedro Oliveira Coelho",
-    "Sara de Almeida Pasolini",
-    "Walisson Ribeiro da Silva"
-  ],
-  linkMapa: "https://www.arcgis.com/apps/mapviewer/index.html?webmap=b42ce1c27d5845e0b29f8b29ae8fcd3b&center=-51.420501%2C-15.128723&scale=18489297.737236",
-  linkPowerBI: ""
-};
-/* ===== FIM DA PARTE EDITÁVEL ===== */
-
-function pending(text) {
-  var s = document.createElement("span");
-  s.className = "pending";
-  s.textContent = text;
-  return s;
-}
-function fill(id, value, placeholder) {
-  var el = document.getElementById(id);
-  if (value) { el.textContent = value; } else { el.appendChild(pending(placeholder)); }
-}
-fill("tema", CONFIG.tema, "tema a preencher");
-fill("descricao", CONFIG.descricao, "descrição a preencher");
-fill("objetivo", CONFIG.objetivo, "objetivo a preencher");
-var team = document.getElementById("team");
-if (CONFIG.integrantes.length) {
-  CONFIG.integrantes.forEach(function (n) {
-    var li = document.createElement("li");
-    li.textContent = n;
-    team.appendChild(li);
-  });
-} else {
-  var li = document.createElement("li");
-  li.appendChild(pending("nomes dos alunos a preencher"));
-  team.appendChild(li);
-}
-
-function wire(id, url) {
-  var a = document.getElementById(id);
-  if (url) { a.href = url; }
-  else { a.setAttribute("aria-disabled", "true"); a.removeAttribute("target"); a.textContent = "Link ainda não adicionado"; a.addEventListener("click", function (e) { e.preventDefault(); }); }
-}
-wire("link-mapa", CONFIG.linkMapa);
-wire("link-pbi", CONFIG.linkPowerBI);
-</script>
-</body>
-</html>
->>>>>>> f613ed76f695ec895056093d0722c4f139d035d7
