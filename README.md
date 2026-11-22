@@ -1,8 +1,8 @@
-# Indicadores Geográficos
+# Indicadores Geográficos 📊
 
 Página web desenvolvida para apresentar os resultados de um trabalho em grupo da disciplina de Business Intelligence do curso de Sistemas de Informação da PUC Betim.
 
-## Sobre o projeto
+## Sobre o projeto 📃
 
 O projeto apresenta os dados de uma concessionária de motos em Minas Gerais em dois formatos complementares:
 
@@ -11,7 +11,7 @@ O projeto apresenta os dados de uma concessionária de motos em Minas Gerais em 
 
 O objetivo é facilitar a visualização da distribuição geográfica dos dados e comparar os resultados entre as cidades.
 
-## Integrantes
+## Integrantes 👤
 
 - Carlos Magno Ferreira Silva
 - Letícia Rodrigues Batista
@@ -19,7 +19,7 @@ O objetivo é facilitar a visualização da distribuição geográfica dos dados
 - Sara de Almeida Pasolini
 - Walisson Ribeiro da Silva
 
-## Estrutura do projeto
+## Estrutura do projeto 🎯
 
 ```text
 TrabalhoBI/
@@ -38,20 +38,14 @@ TrabalhoBI/
 - `assets/js/config.js`: tema, descrição, objetivo, integrantes e links externos.
 - `assets/js/main.js`: preenchimento automático dos elementos da página e configuração dos links.
 
-## Executando localmente
+## Como visualizar 🌐
 
-Abra o arquivo `index.html` diretamente no navegador ou use a extensão Live Server no Visual Studio Code.
+### GitHub Pages
 
-Com o Live Server, execute a página pela opção **Open with Live Server**.
+- 🔗 A página se encontra aqui: [Indicadores Geográficos](https://cmagno44.github.io/indicadores-geograficos/).
 
-## Personalização
 
-As informações editáveis da página ficam em `assets/js/config.js`.
+## Contexto acadêmico
 
-- Para alterar textos, edite `tema`, `descricao` e `objetivo`.
-- Para alterar os integrantes, atualize a lista `integrantes`.
-- Para adicionar o painel do Power BI, informe a URL em `linkPowerBI`.
-- Para alterar o mapa, atualize `linkMapa`.
-
-Campos ou links vazios são exibidos na página com uma indicação de conteúdo pendente.
+Atividade em grupo da PUC Betim, realizada em novembro de 2026.
 
