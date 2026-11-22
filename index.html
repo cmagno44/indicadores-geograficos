@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indicadores Geográficos</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg viewBox="0 0 460 360" fill="none" stroke="var(--contour)" stroke-width="1.5" aria-hidden="true">
+      <ellipse cx="260" cy="170" rx="210" ry="140" transform="rotate(-18 260 170)"/>
+      <ellipse cx="260" cy="170" rx="170" ry="108" transform="rotate(-18 260 170)"/>
+      <ellipse cx="260" cy="170" rx="130" ry="78" transform="rotate(-18 260 170)"/>
+      <ellipse cx="260" cy="170" rx="92" ry="52" transform="rotate(-18 260 170)"/>
+      <ellipse cx="260" cy="170" rx="56" ry="28" transform="rotate(-18 260 170)"/>
+    </svg>
+    <div class="in">
+      <p class="eyebrow">Sistemas de Informação · PUC Betim</p>
+      <h1>Indicadores Geográficos</h1>
+      <p class="lede">Mapa interativo no ArcGIS e painel no Power BI com os mesmos dados.</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Sobre o trabalho</h2>
+    <dl>
+      <dt>Tema</dt>
+      <dd id="tema"></dd>
+      <dt>Descrição</dt>
+      <dd id="descricao"></dd>
+      <dt>Objetivo</dt>
+      <dd id="objetivo"></dd>    </dl>
+  </section>
+
+  <section>
+    <h2>Integrantes</h2>
+    <ul class="team" id="team"></ul>
+  </section>
+
+  <section>
+    <h2>Produtos do trabalho</h2>
+    <div class="cards">
+      <article class="card">
+        <span class="tag">Etapa 1</span>
+        <h3>Mapa de indicadores geográficos</h3>
+        <p>Aplicativo criado no ArcGIS no início do semestre.</p>
+        <a class="btn" id="link-mapa" target="_blank" rel="noopener">Abrir o mapa</a>
+      </article>
+      <article class="card">
+        <span class="tag">Etapa 2</span>
+        <h3>Painel no Power BI</h3>
+        <p>Painel com seis gráficos feitos a partir dos mesmos dados do mapa.</p>
+        <a class="btn" id="link-pbi" target="_blank" rel="noopener">Abrir o painel</a>
+      </article>
+    </div>
+  </section>
+
+  <footer>Atividade em grupo · Novembro de 2026</footer>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
