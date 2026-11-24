@@ -10,6 +10,6 @@ window.SITE_CONFIG = {
     "Walisson Ribeiro da Silva"
   ],
   linkMapa: "https://www.arcgis.com/apps/mapviewer/index.html?webmap=b42ce1c27d5845e0b29f8b29ae8fcd3b&center=-51.420501%2C-15.128723&scale=18489297.737236",
-  linkPowerBI: ""
+  linkPowerBI: "https://app.powerbi.com/reportEmbed?reportId=8061f1bb-271a-4864-886f-48817718907c&autoAuth=true&ctid=5e2a8164-87b6-430b-ac6b-08d6229e7059"
 };
 

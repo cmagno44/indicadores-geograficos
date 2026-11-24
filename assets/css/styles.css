@@ -172,6 +172,17 @@ ul.team li {
   background: var(--surface);
 }
 
+.card-wide {
+  grid-column: 1 / -1;
+}
+
+.report-embed {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1140 / 541.25;
+  border: 0;
+}
+
 .card h3 {
   margin: 0;
   font-family: var(--font-display);
